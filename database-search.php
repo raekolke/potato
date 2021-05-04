@@ -4,7 +4,7 @@
 
 // require the database initialization and functions
 require 'database-config.php';
-require 'functions.php';
+require 'database-functions.php';
 
 // get search value from the submitted POST array
 $search = $_POST["searchText"];
@@ -14,14 +14,14 @@ if ($search != "") {
 	// select all columns (*) in rows where the $search appears in 
 	// patient_name OR patient_complaint OR physician_name
 	$sql = "SELECT * FROM $databaseTable
-					WHERE patient_name LIKE '%$search%'
-					OR patient_complaint LIKE '%$search%' 
-					OR physician_name LIKE '%$search%'
-					ORDER BY appt"; 
+					WHERE situation LIKE '%$search%'
+					OR question LIKE '%$search%' 
+					OR file_name LIKE '%$search%'
+					ORDER BY id"; 
 	$result = $db->query($sql);
 	if (!$result) die("Select Error: " . $sql . "<br>" . $db->error);
 
-	echo outputApptResults($result); // call the function that outputs a table
+	echo outputSitResults($result); // call the function that outputs a table
 	
 }
 
@@ -48,9 +48,9 @@ if ($search != "") {
 	</table>
 </form>
 <ul>
-	<li><a href="add-record.php">Add Record</a></li>
-	<li><a href="index.php">Read Schedule</a></li>
-	<li><a href="search-schedule.php">Search Schedule</a></li>
+	<li><a href="database-add.php">Add Row</a></li>
+	<li><a href="database-index.php">Read Table</a></li>
+	<li><a href="database-search.php">Search Table</a></li>
 </ul>
 
 

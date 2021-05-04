@@ -13,10 +13,12 @@ $databaseTable = "question_table";  // main table name
 /*
 Available columns in this table:
 - id [integer] — auto-incremented unique identifier
-- appt [timestamp] — the appointment date and time of 
-- patient_name [varchar(200)] — the patient’s name
-- patient_complaint [varchar(1000)] — summarizing the patient’s reason for visit
-- physician_name [varchar(200)] — of the assigned physician’s name
+- situation [varchar(1000)] — the situation you are in 
+- question [varchar(1000)] — the question presented with the situation
+- 1option [varchar(200)] — first option 
+- 2option [varchar(200)] — second option
+- 3option [varchar(200)] — third option
+- file_name [varchar(100)] — file name of graphic image that is presented with the situation
 */
 
 // attempt DB connection and die() if it fails
