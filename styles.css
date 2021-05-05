@@ -7,15 +7,15 @@
   margin-bottom: 5vh;
 }
 
-#graphic img {
-  height: auto;
+img {
+  height: 40%;
   width: 40%;
   display: flex;
-}
-
-#graphic {
+  margin: 0px;
   float: left;
 }
+
+
 
 #content {
   float: right;

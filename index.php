@@ -36,10 +36,8 @@
         Choose Your Own Adventure - Will You Make it as a Potato?
       </h1>
     </div>
-    <div id="graphic">
-       <img src="situation1.png">
-    </div>
     <div id="content">
+       <img src="situation1.png">
       <p>
         You are a potato growing in the ground. <br>
       </p>
