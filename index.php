@@ -73,7 +73,7 @@ function checkCookie() {
     <!-- header -->
     <div id="header">
       <h1>
-        Choose Your Own Adventure - Will You Make it as a Potato?
+        CHOOSE YOUR OWN ADVENTURE - WILL YOU MAKE IT AS A POTATO?
       </h1>
     </div>
     
