@@ -1,0 +1,22 @@
+#header {
+  font-size: 200%;
+  background-color: #999999;
+}
+
+#graphic {
+  float: left;
+}
+
+#content {
+  float: right;
+  font-size: 100%;
+}
+
+#background {
+  background-color: white;
+}
+
+p {
+  font-size: 150%;
+}
+
