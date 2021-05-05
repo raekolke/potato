@@ -89,9 +89,9 @@ function checkCookie() {
       <p id="question"></p>
       
       <!-- options -->
-      <button type="button" id="choice1"></button>
-      <button type="button" id="choice2"></button>
-      <button type="button" id="choice3"></button>
+      <button type="button" id="choice1">hello hello</button>
+      <button type="button" id="choice2">are you trying to kill me</button>
+      <button type="button" id="choice3">i hate this so much ugh</button>
       
     </div>
   </div>
