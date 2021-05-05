@@ -20,14 +20,16 @@ th {text-align: left;}
 <?php
 $q = intval($_GET['q']);
 
-$con = mysqli_connect('rkolkeco_potatoadventure','rkolkeco_potatoaccess','lP+mEYzip_xm','my_db');
-if (!$con) {
-  die('Could not connect: ' . mysqli_error($con));
-}
+$db = new mysqli($databaseServer, $databaseUser, $databasePassword, $databaseName);
+if ($db->connect_error) die("Database connection failed: " . $db->connect_error);
 
-mysqli_select_db($con,"ajax_demo");
-$sql="SELECT * FROM user WHERE id = '".$q."'";
-$result = mysqli_query($con,$sql);
+
+  
+mysqli_select_db($db,"ajax_demo");
+  
+$sql = "SELECT * FROM question_table"; 
+$result = $db->query($sql);
+if (!$result) die("Error: " . $sql . "<br>" . $db->error);
 
 echo "<table>
 <tr>
@@ -47,7 +49,7 @@ while($row = mysqli_fetch_array($result)) {
   echo "</tr>";
 }
 echo "</table>";
-mysqli_close($con);
+mysqli_close($db);
 ?>
 </body>
 </html>

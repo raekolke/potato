@@ -1,37 +1,64 @@
-<!DOCTYPE html>
-<html>
+<?php
+    include_once './db-config.php';
+?>
+<!doctype html>
+<html lang="en">
 <head>
-<script>
-function showQuestion(str) {
-  if (str == "") {
-    document.getElementById("txtHint").innerHTML = "";
-    return;
-  } else {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("txtHint").innerHTML = this.responseText;
-      }
-    };
-    xmlhttp.open("GET","getSituation.php?q="+str,true);
-    xmlhttp.send();
-  }
-}
-</script>
+    <title>Potato</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- -------- Font awesome 5 kit -->
+    <script src="https://kit.fontawesome.com/44fb44d106.js"></script>    
 </head>
-<body>
 
-<form>
-<select name="users" onchange="showQuestion(this.value)">
-  <option value="">Select an action:</option>
-  <option value="1">Peter Griffin</option>
-  <option value="2">Lois Griffin</option>
-  <option value="3">Joseph Swanson</option>
-  <option value="4">Glenn Quagmire</option>
-  </select>
-</form>
-<br>
-<div id="txtHint"><b>Person info will be listed here...</b></div>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 m-auto d-block">
+            <table class="table table-striped" id="firstTable">
+                <thead class="bg-success text-white" id="firstThead">
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> Email </th>
+                    <th> Address </th>
+                    <th> City </th>
+                    <th> State </th>
+                    <th> Zipcode </th>
+                </thead>
+                <tbody>
+                    <?php
+                         $sql                 =       "SELECT * FROM registration limit 2";
+                         $result              =       mysqli_query($conn, $sql);
+                 
+                         if(mysqli_num_rows($result) > 0) {
+                             $students        =       mysqli_fetch_all($result,MYSQLI_ASSOC);
+                             foreach($students as $student) : ?>
+                                <tr id="result">
+                                    <td><?php echo $student['first_name']; ?> </td>
+                                    <td><?php echo $student['last_name']; ?> </td>
+                                    <td><?php echo $student['email']; ?> </td>
+                                    <td><?php echo $student['address']; ?> </td>
+                                    <td><?php echo $student['city']; ?> </td>
+                                    <td><?php echo $student['state']; ?> </td>
+                                    <td><?php echo $student['zip_code']; ?> </td>
+                                </tr>
+                             <?php endforeach; 
+                         }   
+                         ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-</body>
-</html>
+    <div class="row">
+        <div class="col-xl-6 col-md-6">
+            <button type="button" class="btn btn-info btn-sm" id="loadBtn"><i class="fa fa-refresh"></i> Load More.. </button>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
