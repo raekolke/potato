@@ -1,5 +1,5 @@
 <?php
-    require 'getSituation.php';
+    require 'functions.php';
     require 'database-config.php';
 ?>
 
@@ -31,23 +31,30 @@
 
 	<!-- HTML elements here -->
   <div id="background">
+    
+    <!-- header -->
     <div id="header">
       <h1>
         Choose Your Own Adventure - Will You Make it as a Potato?
       </h1>
     </div>
+    
     <div class="float-container">
-          <img src="situation1.png" id="photo">
-          <p id="situation">
-            You are a potato growing in the ground.
-          </p>
-          <p id="question">
-            When would you like to start sprouting?
-          </p>
-          <button type="button" id="choice1">Now</button>
-          <button type="button" id="choice2">In 1 week</button>
-          <button type="button" id="choice3">In 1 month</button>
-
+      
+      <!-- graphic -->
+      <img src="" id="photo">
+      
+      <!-- situation -->
+      <p id="situation"></p>
+      
+      <!-- question -->
+      <p id="question"></p>
+      
+      <!-- options -->
+      <button type="button" id="choice1"></button>
+      <button type="button" id="choice2"></button>
+      <button type="button" id="choice3"></button>
+      
     </div>
   </div>
 
