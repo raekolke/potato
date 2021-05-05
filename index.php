@@ -37,21 +37,17 @@
       </h1>
     </div>
     <div class="float-container">
-      <div id="graphic">
-          <img src="situation1.png">
-      </div>
-      <div id="content">
-          <p>
+          <img src="situation1.png" id="photo">
+          <p id="situation">
             You are a potato growing in the ground. <br>
           </p>
           <br>
-          <p>
+          <p id="question">
             When would you like to start sprouting? <br>
           </p>
-          <button type="button">Now<br></button>
-          <button type="button">In 1 week<br></button>
-          <button type="button">In 1 month<br></button>
-      </div>
+          <button type="button" id="choice1">Now<br></button>
+          <button type="button" id="choice2">In 1 week<br></button>
+          <button type="button" id="choice3">In 1 month<br></button>
 
     </div>
   </div>
