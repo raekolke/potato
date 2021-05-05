@@ -12,7 +12,7 @@
 }
 
 img {
-  width: 95%;
+  width: 90%;
   height: auto;
   margin: 0px;
   padding-left: 100px;
@@ -40,8 +40,8 @@ img {
   grid-template-rows: auto auto;
   grid-row-gap: 1vh;
   grid-template-areas:
-    "photo  .  situation"
-    "photo  .  question"
+    ".  .  situation"
+    ".  .  question"
     "photo  .  choice1"
     "photo  .  choice2"
     "photo  .  choice3";
@@ -61,6 +61,10 @@ img {
 
 p {
   font-size: 150%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 #photo {

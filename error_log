@@ -29,3 +29,4 @@
 [05-May-2021 02:20:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/sduttonc/public_html/potato/index.php on line 35
 [05-May-2021 02:31:31 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/sduttonc/public_html/potato/getSituation.php on line 44
 >>>>>>> f0a516f26e7d9be2ae6c920c395b005b134c21fa
+[05-May-2021 04:08:21 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/sduttonc/public_html/potato/getSituation.php on line 32
