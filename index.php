@@ -39,15 +39,14 @@
     <div class="float-container">
           <img src="situation1.png" id="photo">
           <p id="situation">
-            You are a potato growing in the ground. <br>
+            You are a potato growing in the ground.
           </p>
-          <br>
           <p id="question">
-            When would you like to start sprouting? <br>
+            When would you like to start sprouting?
           </p>
-          <button type="button" id="choice1">Now<br></button>
-          <button type="button" id="choice2">In 1 week<br></button>
-          <button type="button" id="choice3">In 1 month<br></button>
+          <button type="button" id="choice1">Now</button>
+          <button type="button" id="choice2">In 1 week</button>
+          <button type="button" id="choice3">In 1 month</button>
 
     </div>
   </div>
