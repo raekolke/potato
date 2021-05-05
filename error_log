@@ -1,0 +1,5 @@
+[05-May-2021 00:05:02 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'peter'@'localhost' (using password: YES) in /home/sduttonc/public_html/potato/getSituation.php on line 23
+[05-May-2021 00:05:02 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/sduttonc/public_html/potato/getSituation.php on line 25
+[05-May-2021 00:07:46 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/sduttonc/public_html/potato/getSituation.php on line 23
+[05-May-2021 00:07:46 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/sduttonc/public_html/potato/getSituation.php on line 23
+[05-May-2021 00:07:46 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/sduttonc/public_html/potato/getSituation.php on line 25
