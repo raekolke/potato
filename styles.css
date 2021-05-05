@@ -8,13 +8,20 @@
 }
 
 img {
-  height: 40%;
   width: 40%;
+  height: auto;
   display: flex;
   margin: 0px;
   float: left;
 }
 
+.float-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1vw;
+  grid-template-areas:
+    "graphic       .  content";
+}
 
 
 #content {

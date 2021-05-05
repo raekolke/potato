@@ -36,18 +36,23 @@
         Choose Your Own Adventure - Will You Make it as a Potato?
       </h1>
     </div>
-    <div id="content">
-       <img src="situation1.png">
-      <p>
-        You are a potato growing in the ground. <br>
-      </p>
-      <br>
-      <p>
-        When would you like to start sprouting? <br>
-      </p>
-      <button type="button">Now<br></button>
-      <button type="button">In 1 week<br></button>
-      <button type="button">In 1 month<br></button>
+    <div class="float-container">
+      <div id="graphic">
+          <img src="situation1.png">
+      </div>
+      <div id="content">
+          <p>
+            You are a potato growing in the ground. <br>
+          </p>
+          <br>
+          <p>
+            When would you like to start sprouting? <br>
+          </p>
+          <button type="button">Now<br></button>
+          <button type="button">In 1 week<br></button>
+          <button type="button">In 1 month<br></button>
+      </div>
+
     </div>
   </div>
 
