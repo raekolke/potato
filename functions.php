@@ -1,5 +1,5 @@
 <?
-/*
+
 require 'database-config.php';
 
 //recieve and process $_GET data
@@ -35,4 +35,3 @@ $requestedJSON = json_encode($outputArray);
 //output JSON
 echo $requestedJSON;
 
-*/

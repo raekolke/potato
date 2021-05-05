@@ -1,7 +1,4 @@
 
-
-
-/*
 // generic AJAX function to load fromFile into object with ID whereTo
 function loadFileInto(fromIdentifier, fromList) {
 
@@ -42,6 +39,47 @@ function loadFileInto(fromIdentifier, fromList) {
 	// now that everything is set, initiate request
 	ajax.send();
 
-} */
+} 
+
+// object constructor for Recipe prototype
+function pageSituation(situation, question, option1, option2, option3, fileName) {
+	this.sit = situation;
+	this.quest = question;
+	this.opt1 = option1;
+	this.opt2 = option2;
+  this.opt3 = option3;
+  this.name = fileName;
+	
+	// update the screen with this object's recipe information
+	this.displaySituation = function() {
+		
+		// update the recipe title
+		document.querySelector("#situation").innerHTML = this.sit;
+		
+		// update the recipe contributor
+		document.querySelector("#question").innerHTML = this.quest;
+    
+    document.querySelector("#choice1").innerHTML = this.opt1;
+    
+    document.querySelector("#choice2").innerHTML = this.opt2;
+    
+    document.querySelector("#choice3").innerHTML = this.opt3;
+		
+		// update the image
+		document.querySelector("#photo").style.backgroundImage = "url(" + this.name + ")";
+		
+	}
+	
+}
+
+
+
+SevenLayerBars = new pageSituation(
+	"Seven Layer Bars", 
+	"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5574746.jpg&w=596&h=596&c=sc&poi=face&q=85",
+	"Tor",
+	"SevenLayerBars"
+);
+
 
 
