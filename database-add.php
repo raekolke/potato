@@ -75,6 +75,7 @@ if ( ($sitSituation != "") && ($sitQuestion != "") && ($sit1option != "") && ($s
 	<li><a href="database-add.php">Add Row</a></li>
 	<li><a href="database-index.php">Read Table</a></li>
 	<li><a href="database-search.php">Search Table</a></li>
+  <li><a href="database-outcome.php">Outcome Table</a></li>
 </ul>
 
 </body>

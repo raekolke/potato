@@ -13,15 +13,15 @@ if ($search != "") {
 
 	// select all columns (*) in rows where the $search appears in 
 	// patient_name OR patient_complaint OR physician_name
-	$sql = "SELECT * FROM $databaseTable
-					WHERE situation LIKE '%$search%'
-					OR question LIKE '%$search%' 
+	$sql = "SELECT * FROM $outcomeTable
+					WHERE outcome LIKE '%$search%'
+					OR try_again LIKE '%$search%' 
 					OR file_name LIKE '%$search%'
 					ORDER BY id"; 
 	$result = $db->query($sql);
 	if (!$result) die("Select Error: " . $sql . "<br>" . $db->error);
 
-	echo outputSitResults($result); // call the function that outputs a table
+	echo outputOutResults($result); // call the function that outputs a table
 	
 }
 
@@ -48,10 +48,10 @@ if ($search != "") {
 	</table>
 </form>
 <ul>
-	<li><a href="database-add.php">Add Row</a></li>
-	<li><a href="database-index.php">Read Table</a></li>
-	<li><a href="database-search.php">Search Table</a></li>
-  <li><a href="database-outcome.php">Outcome Table</a></li>
+	<li><a href="outcome-add.php">Add Row</a></li>
+  <li><a href="database-outcome.php">Read Table</a></li>
+	<li><a href="outcome-search.php">Search Table</a></li>
+  <li><a href="database-index.php">Situation Table</a></li>
 </ul>
 
 

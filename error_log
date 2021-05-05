@@ -1,3 +1,8 @@
 [04-May-2021 23:09:05 UTC] PHP Warning:  require(functions.php): failed to open stream: No such file or directory in /home/rkolkeco/public_html/potato/database-index.php on line 7
 [04-May-2021 23:09:05 UTC] PHP Warning:  require(functions.php): failed to open stream: No such file or directory in /home/rkolkeco/public_html/potato/database-index.php on line 7
 [04-May-2021 23:09:05 UTC] PHP Fatal error:  require(): Failed opening required 'functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/rkolkeco/public_html/potato/database-index.php on line 7
+[05-May-2021 00:24:02 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/rkolkeco/public_html/potato/database-config.php on line 25
+[05-May-2021 01:39:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rkolkeco/public_html/potato/database-functions.php on line 52
+[05-May-2021 01:40:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rkolkeco/public_html/potato/database-functions.php on line 52
+[05-May-2021 01:40:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rkolkeco/public_html/potato/database-functions.php on line 52
+[05-May-2021 01:40:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rkolkeco/public_html/potato/database-functions.php on line 52
