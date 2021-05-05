@@ -3,14 +3,14 @@
 // This file contains one function to generate a table of information of data
 
 // output a table of results, including a checkbox if $includeCheckbox is true
-// receive the appointments as a database object into $allAppts
+// receive the situations as a database object into $allSit
 function outputSitResults($allSit, $includeCheckbox = false) {
 	
 	$counter = 0;
 	$output = "";
 	$output .= "<table cellpadding='10'>\n";
 	
-	// loop through $allAppts with each $row available as $appt
+	// loop through $allSit with each $row available as $sit
 	foreach ($allSit as $sit) {
 		
 		$counter++;
@@ -41,14 +41,14 @@ function outputSitResults($allSit, $includeCheckbox = false) {
 
 // function for second table
 // output a table of results, including a checkbox if $includeCheckbox is true
-// receive the appointments as a database object into $allAppts
+// receive the outcomes as a database object into $allOut
 function outputOutResults($allOut, $includeCheckbox = false) {
 	
 	$counter = 0;
 	$output = "";
 	$output .= "<table cellpadding='10'>\n";
 	
-	// loop through $allout with each $row available as $appt
+	// loop through $allOut with each $row available as $out
 	foreach ($allOut as $out) {
 		
 		$counter++;
