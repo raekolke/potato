@@ -1,3 +1,5 @@
+/* was trying to window.onload the first situation but was impossible without being able to get the mysql information into this file
+
 window.onload = function() {
 	
 	loadFileInto("ingredients.html", "ingredients");
@@ -7,8 +9,9 @@ window.onload = function() {
 	loadFileInto("directions.html", "directions");
 	
 };
+*/
 
-
+// what needs to be changed here?
 
 // generic AJAX function to load fromFile into object with ID whereTo
 function loadFileInto(fromIdentifier, fromTable) {
@@ -52,6 +55,8 @@ function loadFileInto(fromIdentifier, fromTable) {
 
 } 
 
+/* I'm pretty sure this part is useless
+
 // object constructor for Recipe prototype
 function pageSituation(situation, question, option1, option2, option3, fileName) {
 	this.sit = situation;
@@ -85,12 +90,12 @@ function pageSituation(situation, question, option1, option2, option3, fileName)
 
 
 
-SevenLayerBars = new pageSituation(
-	"Seven Layer Bars", 
+Situation1 = new pageSituation(
+	"", 
 	"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5574746.jpg&w=596&h=596&c=sc&poi=face&q=85",
 	"Tor",
 	"SevenLayerBars"
 );
-
+*/
 
 
