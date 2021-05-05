@@ -18,6 +18,15 @@ th {text-align: left;}
 <body>
 
 <?php
+  
+$databaseServer = "161.35.127.119"; // IP number of database, may be on the same server
+$databaseName = "rkolkeco_potatoadventure"; // database name
+$databaseUser = "rkolkeco_potatoaccess"; // user name
+$databasePassword = "lP+mEYzip_xm";  // user password
+
+$databaseTable = "question_table";  // main table name
+$outcomeTable = "outcome_table"; // second table name
+  
 $q = intval($_GET['q']);
 
 $db = new mysqli($databaseServer, $databaseUser, $databasePassword, $databaseName);
@@ -31,6 +40,7 @@ $sql = "SELECT * FROM question_table";
 $result = $db->query($sql);
 if (!$result) die("Error: " . $sql . "<br>" . $db->error);
 
+  /*
 echo "<table>
 <tr>
 <th>Firstname</th>
@@ -49,6 +59,7 @@ while($row = mysqli_fetch_array($result)) {
   echo "</tr>";
 }
 echo "</table>";
+*/
 mysqli_close($db);
 ?>
 </body>
