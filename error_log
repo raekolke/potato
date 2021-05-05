@@ -31,3 +31,10 @@
 >>>>>>> f0a516f26e7d9be2ae6c920c395b005b134c21fa
 [05-May-2021 04:08:21 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/sduttonc/public_html/potato/getSituation.php on line 32
 [05-May-2021 04:52:45 UTC] PHP Warning:  Unterminated comment starting line 2 in /home/rkolkeco/public_html/potato/functions.php on line 2
+[05-May-2021 04:58:37 UTC] PHP Warning:  require(functions.php): failed to open stream: No such file or directory in /home/sduttonc/public_html/potato/index.php on line 2
+[05-May-2021 04:58:37 UTC] PHP Warning:  require(functions.php): failed to open stream: No such file or directory in /home/sduttonc/public_html/potato/index.php on line 2
+[05-May-2021 04:58:37 UTC] PHP Fatal error:  require(): Failed opening required 'functions.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sduttonc/public_html/potato/index.php on line 2
+[05-May-2021 05:00:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sduttonc/public_html/potato/index.php:5) in /home/sduttonc/public_html/potato/index.php on line 31
+[05-May-2021 05:02:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sduttonc/public_html/potato/index.php:5) in /home/sduttonc/public_html/potato/index.php on line 31
+[05-May-2021 05:02:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sduttonc/public_html/potato/index.php:5) in /home/sduttonc/public_html/potato/index.php on line 31
+[05-May-2021 05:02:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sduttonc/public_html/potato/index.php:5) in /home/sduttonc/public_html/potato/index.php on line 12
