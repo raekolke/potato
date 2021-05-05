@@ -10,13 +10,13 @@ $requestedID = htmlspecialchars($requestedID);
 $requestedID = filter_var($requestedID, FILTER_SANITIZE_STRING);
 
 //get requested list
-$requestedList = $_REQUEST["list"];
-$requestedList = htmlspecialchars($requestedList);
-$requestedList = filter_var($requestedList, FILTER_SANITIZE_STRING);
+$requestedTable = $_REQUEST["table"];
+$requestedTable = htmlspecialchars($requestedTable);
+$requestedTable = filter_var($requestedTable, FILTER_SANITIZE_STRING);
 
 //get information from database
-$sql = "SELECT * FROM $databaseTable
-WHERE name='$situation'
+$sql = "SELECT * FROM $requestedID
+WHERE name='$requestedTable'
 ORDER BY id";
 $requestedOutput = $db->query($sql);
 if (!$requestedOutput) die("List Error: " . $sql . "<br>" . $db->error);

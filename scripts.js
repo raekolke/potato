@@ -1,12 +1,12 @@
 
 // generic AJAX function to load fromFile into object with ID whereTo
-function loadFileInto(fromIdentifier, fromList) {
+function loadFileInto(fromIdentifier, fromTable) {
 
 	// creating a new XMLHttpRequest object
 	ajax = new XMLHttpRequest();
   
   // define the fromFile value based on PHP URL
-  fromFile = "functions.php?id=" + fromIdentifier + "&list=" + fromList;
+  fromFile = "functions.php?id=" + fromIdentifier + "&table=" + fromTable;
 
 	// defines the GET/POST method, source, and async value of the AJAX object
 	ajax.open("GET", fromFile, true);
@@ -25,8 +25,8 @@ function loadFileInto(fromIdentifier, fromList) {
           responseHTML += "<li>" + responseArray[x].content + "</li>";
         }
         
-        whereTo = "#" + fromList + " ul";
-        if (fromList == "directions") whereTo = "#" + fromList + " ol";
+        whereTo = "#" + fromTable + " ul";
+        if (fromTable == "directions") whereTo = "#" + fromTable + " ol";
         document.querySelector(whereTo).innerHTML = responseHTML;
 				
 			} else if ((this.readyState == 4) && (this.status != 200)) {
