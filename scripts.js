@@ -58,7 +58,7 @@ function loadFileInto(fromIdentifier, fromTable) {
 } 
 
 //tacking progress variables to send user to next step
-/*
+
 optionClick1 = document.querySelector("#choice1");
 optionClick1.onclick = function() {
   if (trackProgress == 1) {
@@ -66,7 +66,7 @@ optionClick1.onclick = function() {
     fromTable == question_table;
   }
 }
-*/
+
 optionClick2 = document.querySelector("#choice2");
 optionClick2.onclick = function() {
   optionClick2.classList.toggle("equipmentClicked");

@@ -72,7 +72,7 @@ function checkCookie() {
     <!-- was trying to onclick the header to spawn the first situation, but the idea of a 'recipe' is irrelevant when all my information is still in the database -->
     <div id="header">
       <h1>
-        <a href="#" onclick="">Choose Your Own Adventure - Will You Make It As A Potato?</a>
+        Choose Your Own Adventure - Will You Make It As A Potato?
       </h1>
     </div>
     
@@ -88,9 +88,9 @@ function checkCookie() {
       <p id="question"></p>
       
       <!-- options -->
-      <button type="button" id="choice1"></button>
-      <button type="button" id="choice2"></button>
-      <button type="button" id="choice3"></button>
+      <button type="button" id="choice1" onclick="optionClick1"></button>
+      <button type="button" id="choice2" onclick="optionClick2"></button>
+      <button type="button" id="choice3" onclick="optionClick3"></button>
       
     </div>
   </div>

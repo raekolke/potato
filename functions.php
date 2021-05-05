@@ -29,11 +29,9 @@ $requestedJSON = "0";
 // I think this needs to be changed but I do not understnad what any of this means
 
 if ($requestedOutput->num_rows > 0) {
-$outputArray = [];
-while( $row = $requestedOutput->fetch_assoc() ) {
-$outputArray[] = $row;
-}
-$requestedJSON = json_encode($outputArray);
+
+  $requestedJSON = json_encode( $requestedOutput->fetch_assoc() );
+
 }
 
 //output JSON
