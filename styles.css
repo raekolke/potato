@@ -1,6 +1,13 @@
 #header {
-  font-size: 200%;
+  font-size: 150%;
   background-color: #999999;
+  text-align: center;
+  margin: 0;
+}
+
+#graphic img {
+  height: auto;
+  width: 50%;
 }
 
 #graphic {
