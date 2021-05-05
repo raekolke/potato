@@ -31,6 +31,11 @@ img {
 #choice3 {
   margin-right: 100px;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  padding-left: 100px;
+  background-color: #FBAF00;
 }
 
 .float-container {
@@ -40,20 +45,14 @@ img {
   grid-template-rows: auto auto;
   grid-row-gap: 1vh;
   grid-template-areas:
-    ".  .  situation"
-    ".  .  question"
+    "photo  .  situation"
+    "photo  .  question"
     "photo  .  choice1"
     "photo  .  choice2"
     "photo  .  choice3";
 }
 
 
-#content {
-  font-size: 100%;
-  display: flex;
-  width: 50%;
-  position: relative;
-}
 
 #background {
   background-color: white;
