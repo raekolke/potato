@@ -1,3 +1,14 @@
+window.onload = function() {
+	
+	loadFileInto("ingredients.html", "ingredients");
+	
+	loadFileInto("equipment.html", "equipment");
+	
+	loadFileInto("directions.html", "directions");
+	
+};
+
+
 
 // generic AJAX function to load fromFile into object with ID whereTo
 function loadFileInto(fromIdentifier, fromTable) {

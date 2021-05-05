@@ -1,5 +1,4 @@
 <?
-
 require 'database-config.php';
 
 //recieve and process $_GET data
@@ -15,8 +14,7 @@ $requestedTable = htmlspecialchars($requestedTable);
 $requestedTable = filter_var($requestedTable, FILTER_SANITIZE_STRING);
 
 //get information from database
-$sql = "SELECT * FROM $requestedID
-WHERE name='$requestedTable'
+$sql = "SELECT * FROM $databaseTable
 ORDER BY id";
 $requestedOutput = $db->query($sql);
 if (!$requestedOutput) die("List Error: " . $sql . "<br>" . $db->error);
