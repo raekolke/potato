@@ -1,3 +1,6 @@
+// tracking variable initialized
+trackProgress = 1;
+
 // loading the first situation on window load
 
 window.onload = function() {
@@ -53,6 +56,27 @@ function loadFileInto(fromIdentifier, fromTable) {
 	ajax.send();
 
 } 
+
+//tacking progress variables to send user to next step
+
+optionClick1 = document.querySelector("#choice1");
+optionClick1.onclick = function() {
+  if (trackProgress == 1) {
+    responseObj
+  }
+}
+
+optionClick2 = document.querySelector("#choice2");
+optionClick2.onclick = function() {
+  optionClick2.classList.toggle("equipmentClicked");
+}
+
+optionClick3 = document.querySelector("#choice3");
+optionClick3.onclick = function() {
+  optionClick3.classList.toggle("directionsClicked");
+}
+
+
 
 /* I'm pretty sure this part is useless
 
