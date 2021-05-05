@@ -16,7 +16,8 @@ $requestedTable = htmlspecialchars($requestedTable);
 $requestedTable = filter_var($requestedTable, FILTER_SANITIZE_STRING);
 
 //get information from database
-$sql = "SELECT * FROM $databaseTable
+$sql = "SELECT * FROM $requestedTable
+WHERE id=$requestedID
 ORDER BY id";
 $requestedOutput = $db->query($sql);
 if (!$requestedOutput) die("List Error: " . $sql . "<br>" . $db->error);

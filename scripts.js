@@ -1,15 +1,11 @@
-/* was trying to window.onload the first situation but was impossible without being able to get the mysql information into this file
+// loading the first situation on window load
 
 window.onload = function() {
 	
-	loadFileInto("ingredients.html", "ingredients");
-	
-	loadFileInto("equipment.html", "equipment");
-	
-	loadFileInto("directions.html", "directions");
+	loadFileInto(1, "question_table");
 	
 };
-*/
+
 
 // what needs to be changed here?
 
@@ -32,21 +28,24 @@ function loadFileInto(fromIdentifier, fromTable) {
 				
         console.log("AJAX JSON response: " + this.responseText);
         
-        //convert JSON from PHP into JS array
-        responseArray = JSON.parse(this.responseText);
-        responseHTML = "";
-        for (x=0; x<responseArray.length; x++) {
-          responseHTML += "<li>" + responseArray[x].content + "</li>";
-        }
-        
-        whereTo = "#" + fromTable + " ul";
-        if (fromTable == "directions") whereTo = "#" + fromTable + " ol";
-        document.querySelector(whereTo).innerHTML = responseHTML;
-				
-			} else if ((this.readyState == 4) && (this.status != 200)) {
-				console.log("Error: " + this.responseText);
-				
-			}
+        responseObj = JSON.parse(this.responseText); // responseObj gets named properties matching the database columns
+
+        document.getElementById("situation").innerHTML = responseObj.situation; // using the DOM, set the situation
+
+        document.getElementById("question").innerHTML = responseObj.question; // set the question
+
+        document.getElementById("photo").src = responsObj.file_name; // set the image source
+
+        // set the options
+
+        // need to use array syntax instead of object.property syntax because you can’t start property names with a number
+
+        document.getElementById("choice1").innerHTML = responseObj["1option"];
+
+        document.getElementById("choice2").innerHTML = responseObj["2option"];
+
+        document.getElementById("choice3").innerHTML = responseObj["3option"];
+      }
 		
 	} // end ajax.onreadystatechange
 

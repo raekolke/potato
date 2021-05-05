@@ -1,6 +1,4 @@
 <?php
-    require 'functions.php';
-    require 'database-config.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +20,6 @@
 	<!-- external and internal JavaScript -->
 	<script type="text/javascript" src="scripts.js" defer></script>
 	<script>
-    
-/* cookie code from w3schools: https://www.w3schools.com/js/js_cookies.asp */
-    
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -50,9 +45,9 @@ function getCookie(cname) {
 function checkCookie() {
   var user = getCookie("username");
   if (user != "") {
-    alert("Welcome back " + user);
+    alert("Welcome again " + user);
   } else {
-    user = prompt("Please enter your full name:", "");
+    user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
       setCookie("username", user, 365);
     }
