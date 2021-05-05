@@ -41,14 +41,15 @@
     </div>
     <div id="content">
       <p>
-        You are a potato growing in the ground.
+        You are a potato growing in the ground. <br>
       </p>
+      <br>
       <p>
-        When would you like to start sprouting?
+        When would you like to start sprouting? <br>
       </p>
-      <button type="button">Now</button>
-      <button type="button">In 1 week</button>
-      <button type="button">In 1 month</button>
+      <button type="button">Now<br></button>
+      <button type="button">In 1 week<br></button>
+      <button type="button">In 1 month<br></button>
     </div>
   </div>
 

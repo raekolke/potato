@@ -1,13 +1,16 @@
-#header {
-  font-size: 150%;
+#header h1 {
+  font-size: 300%;
   background-color: #999999;
   text-align: center;
-  margin: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 5vh;
 }
 
 #graphic img {
   height: auto;
-  width: 48%;
+  width: 40%;
+  display: flex;
 }
 
 #graphic {
@@ -17,6 +20,9 @@
 #content {
   float: right;
   font-size: 100%;
+  display: flex;
+  width: 50%;
+  position: relative;
 }
 
 #background {
