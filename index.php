@@ -1,5 +1,6 @@
 <?php
-    include_once './getSituation.php';
+    require 'getSituation.php';
+    require 'database-config.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
 	<title>Potato</title>
 
 	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="stylesheet.css" media="all">
+	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
 		/* in-file CSS here */
 	</style>
@@ -29,10 +30,27 @@
 <body>
 
 	<!-- HTML elements here -->
-  <img src="">
-  <button type="button"></button>
-  <button type="button"></button>
-  <button type="button"></button>
+  <div id="background">
+    <div id="header">
+      <h1>
+        Choose Your Own Adventure - Will You Make it as a Potato?
+      </h1>
+    </div>
+    <div id="graphic">
+       <img src="situation1.png">
+    </div>
+    <div id="content">
+      <p>
+        You are a potato growing in the ground.
+      </p>
+      <p>
+        When would you like to start sprouting?
+      </p>
+      <button type="button">Now</button>
+      <button type="button">In 1 week</button>
+      <button type="button">In 1 month</button>
+    </div>
+  </div>
 
 </body>
 
