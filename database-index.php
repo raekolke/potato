@@ -31,14 +31,14 @@ if (!$result) die("Select Error: " . $sql . "<br>" . $db->error);
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple Database List</title>
+	<title>Database</title>
 </head>
 <body>
 
 <form method='POST'>
 <?= outputSitResults($result, true); // call the function that returns HTML for a table
 ?>
-<button type="submit">Delete Checked Records</button>
+<button type="submit">Delete Checked Rows</button>
 </form>
 
 <ul>

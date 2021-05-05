@@ -7,7 +7,7 @@ require 'database-config.php';
 require 'database-functions.php';
 
 // read submitted data from the $_POST array
-$sitSituation = mysqli_real_escape_string($db, $_POST["visitSituation"]); // YYYY-MM-DD HH:MM:SS
+$sitSituation = mysqli_real_escape_string($db, $_POST["visitSituation"]);
 $sitQuestion = mysqli_real_escape_string($db, $_POST["visitQuestion"]);
 $sit1option = mysqli_real_escape_string($db, $_POST["visit1option"]);
 $sit2option = mysqli_real_escape_string($db, $_POST["visit2option"]);
