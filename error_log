@@ -14,7 +14,18 @@
 [05-May-2021 01:40:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rkolkeco/public_html/potato/database-functions.php on line 52
 [05-May-2021 01:40:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/rkolkeco/public_html/potato/database-functions.php on line 52
 >>>>>>> 8616665885bf4ae2a0f9dea0253ed76974b13dcd
+<<<<<<< HEAD
 [05-May-2021 02:20:35 UTC] PHP Warning:  include_once(./db-config.php): failed to open stream: No such file or directory in /home/rkolkeco/public_html/potato/index.php on line 2
 [05-May-2021 02:20:35 UTC] PHP Warning:  include_once(): Failed opening './db-config.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/rkolkeco/public_html/potato/index.php on line 2
 [05-May-2021 02:20:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rkolkeco/public_html/potato/index.php on line 33
 [05-May-2021 02:20:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/rkolkeco/public_html/potato/index.php on line 35
+=======
+[05-May-2021 02:16:07 UTC] PHP Warning:  include_once(./db-config.php): failed to open stream: No such file or directory in /home/sduttonc/public_html/potato/index.php on line 2
+[05-May-2021 02:16:07 UTC] PHP Warning:  include_once(): Failed opening './db-config.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sduttonc/public_html/potato/index.php on line 2
+[05-May-2021 02:16:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/sduttonc/public_html/potato/index.php on line 33
+[05-May-2021 02:16:07 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/sduttonc/public_html/potato/index.php on line 35
+[05-May-2021 02:16:55 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/sduttonc/public_html/potato/getSituation.php on line 23
+[05-May-2021 02:20:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/sduttonc/public_html/potato/index.php on line 33
+[05-May-2021 02:20:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/sduttonc/public_html/potato/index.php on line 35
+[05-May-2021 02:31:31 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/sduttonc/public_html/potato/getSituation.php on line 44
+>>>>>>> f0a516f26e7d9be2ae6c920c395b005b134c21fa
