@@ -88,9 +88,9 @@ function checkCookie() {
       <p id="question"></p>
       
       <!-- options -->
-      <button type="button" id="choice1" onclick="optionClick1"></button>
-      <button type="button" id="choice2" onclick="optionClick2"></button>
-      <button type="button" id="choice3" onclick="optionClick3"></button>
+      <button id="choice1" type="button" onclick="optionClick1"></button>
+      <button id="choice2" type="button" onclick="optionClick2"></button>
+      <button id="choice3" type="button" onclick="optionClick3"></button>
       
     </div>
   </div>
