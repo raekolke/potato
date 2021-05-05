@@ -37,7 +37,7 @@ function loadFileInto(fromIdentifier, fromTable) {
 
         document.getElementById("question").innerHTML = responseObj.question; // set the question
 
-        document.getElementById("photo").src = responsObj.file_name; // set the image source
+        document.getElementById("photo").src = responseObj.file_name; // set the image source
 
         // set the options
 
@@ -58,14 +58,15 @@ function loadFileInto(fromIdentifier, fromTable) {
 } 
 
 //tacking progress variables to send user to next step
-
+/*
 optionClick1 = document.querySelector("#choice1");
 optionClick1.onclick = function() {
   if (trackProgress == 1) {
-    responseObj
+    fromIdentifier == 1;
+    fromTable == question_table;
   }
 }
-
+*/
 optionClick2 = document.querySelector("#choice2");
 optionClick2.onclick = function() {
   optionClick2.classList.toggle("equipmentClicked");
