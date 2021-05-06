@@ -51,10 +51,22 @@ function loadFileInto(fromIdentifier, fromTable) {
 
         document.getElementById("choice3").innerHTML = responseObj["3option"];
           
+        document.getElementById("tryAgain").style.display = "none"; //hide try again button
+          
         } else if (fromTable == "outcome_table") {
           document.getElementById("situation").innerHTML = responseObj.outcome; //using the DOM, set the outcome
           
           document.getElementById("choice1").innerHTML = responseObj.try_again; // setting the try again
+          
+          document.getElementById("photo").src = responseObj.file_name; // set image source
+          
+          document.getElementById("choice1").style.display = "none"; // hide option buttons
+          
+          document.getElementById("choice2").style.display = "none";
+          
+          document.getElementById("choice3").style.display = "none";
+          
+          document.getElementById("question").style.display = "none"; //hide question
         }
         
       
@@ -71,30 +83,48 @@ function loadFileInto(fromIdentifier, fromTable) {
 
 optionClick1 = document.querySelector("button#choice1");
 optionClick1.onclick = function() {
+  
   if (trackProgress == 1) {
+    
     loadFileInto(2, "question_table");
     trackProgress++;
+    
   } if (trackProgress == 2) {
+    
     loadFileInto(2, "outcome_table");
+    trackProgress++;
+    
   }
 }
 
 optionClick2 = document.querySelector("button#choice2");
 optionClick2.onclick = function() {
+  
   if (trackProgress == 1) {
+    
     loadFileInto(2, "question_table");
     trackProgress++;
+    
   }
 }
 
 optionClick3 = document.querySelector("button#choice3");
 optionClick3.onclick = function() {
+  
   if (trackProgress == 1) {
+    
     loadFileInto(1, "outcome_table");
     trackProgress++;
+    
   }
 }
 
+againClick = document.querySelector("button#tryAgain");
+againClick.onclick = function() {
+  
+    loadFileInto(1, "question_table");
+  
+}
 
 
 /* I'm pretty sure this part is useless
