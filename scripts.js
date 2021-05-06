@@ -56,6 +56,7 @@ function loadFileInto(fromIdentifier, fromTable) {
         } else if (fromTable == "outcome_table") {
           document.getElementById("situation").innerHTML = responseObj.outcome; //using the DOM, set the outcome
           
+          document.getElementById("tryAgain").style.display = "block";
           document.getElementById("tryAgain").innerHTML = responseObj.try_again; // setting the try again
           
           document.getElementById("photo").src = responseObj.file_name; // set image source
@@ -87,14 +88,27 @@ optionClick1.onclick = function() {
   if (trackProgress == 1) {
     
     loadFileInto(2, "question_table");
-    trackProgress++;
     
-  } if (trackProgress == 2) {
+  } else if (trackProgress == 2) {
     
     loadFileInto(2, "outcome_table");
-    trackProgress++;
     
-  }
+  } else if (trackProgress == 3) {
+    
+    loadFileInto(4, "question_table");
+    
+  } else if (trackProgress == 4) {
+    
+    loadFileInto(4, "outcome_table");
+    
+  } else if (trackProgress == 5) {
+    
+    loadFileInto(5, "outcome_table");
+    
+  } 
+  
+  trackProgress++;
+  
 }
 
 optionClick2 = document.querySelector("button#choice2");
@@ -103,9 +117,27 @@ optionClick2.onclick = function() {
   if (trackProgress == 1) {
     
     loadFileInto(2, "question_table");
-    trackProgress++;
     
-  }
+  } else if (trackProgress == 2) {
+    
+    loadFileInto(3, "question_table");
+    
+  } else if (trackProgress == 3) {
+    
+    loadFileInto(3, "outcome_table");
+    
+  } else if (trackProgress == 4) {
+    
+    loadFileInto(5, "question_table");
+    
+  } else if (trackProgress == 5) {
+    
+    loadFileInto(7, "outcome_table");
+    
+  } 
+  
+  trackProgress++;
+  
 }
 
 optionClick3 = document.querySelector("button#choice3");
@@ -114,15 +146,43 @@ optionClick3.onclick = function() {
   if (trackProgress == 1) {
     
     loadFileInto(1, "outcome_table");
-    trackProgress++;
     
-  }
+  } else if (trackProgress == 2) {
+    
+    loadFileInto(3, "question_table");
+    
+  } else if (trackProgress == 3) {
+    
+    loadFileInto(4, "question_table");
+    
+  } else if (trackProgress == 4) {
+    
+    loadFileInto(5, "question_table");
+    
+  } else if (trackProgress == 5) {
+    
+    loadFileInto(6, "outcome_table");
+    
+  } 
+  
+  trackProgress++;
+  
 }
 
 againClick = document.querySelector("button#tryAgain");
 againClick.onclick = function() {
   
     loadFileInto(1, "question_table");
+  
+    trackProgress = 1;
+    
+    document.getElementById("choice1").style.display = "block"; // hide option buttons
+          
+    document.getElementById("choice2").style.display = "block";
+          
+    document.getElementById("choice3").style.display = "block";
+          
+    document.getElementById("question").style.display = "block";
   
 }
 
