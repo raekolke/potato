@@ -104,3 +104,14 @@ p {
 #choice3 {
   grid-area: choice3;
 }
+
+#tryAgain {
+  margin-right: 100px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  padding-left: 100px;
+  background-color: #FBAF00;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
