@@ -64,19 +64,10 @@ img {
     "photo  .  question"
     "photo  .  choice1"
     "photo  .  choice2"
-    "photo  .  choice3";
+    "photo  .  choice3"
+    "photo  .  tryAgain";
 }
 
-.dead {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 1vw;
-  grid-template-rows: auto auto;
-  grid-row-gap: 1vh;
-  grid-template-areas:
-    "photo     .     situation"
-    "photo     .     tryAgain";
-}
 
 
 
@@ -125,4 +116,5 @@ p {
   padding-left: 100px;
   background-color: #FBAF00;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  grid-area: tryAgain;
 }
