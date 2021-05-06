@@ -32,6 +32,8 @@ function loadFileInto(fromIdentifier, fromTable) {
         console.log("AJAX JSON response: " + this.responseText);
         
         responseObj = JSON.parse(this.responseText); // responseObj gets named properties matching the database columns
+       
+        if (fromTable == "question_table"){
 
         document.getElementById("situation").innerHTML = responseObj.situation; // using the DOM, set the situation
 
@@ -48,6 +50,14 @@ function loadFileInto(fromIdentifier, fromTable) {
         document.getElementById("choice2").innerHTML = responseObj["2option"];
 
         document.getElementById("choice3").innerHTML = responseObj["3option"];
+          
+        } else if (fromTable == "outcome_table") {
+          document.getElementById("situation").innerHTML = responseObj.outcome; //using the DOM, set the outcome
+          
+          document.getElementById("choice1").innerHTML = responseObj.try_again; // setting the try again
+        }
+        
+      
       }
 		
 	} // end ajax.onreadystatechange
