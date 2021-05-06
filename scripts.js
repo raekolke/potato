@@ -59,22 +59,27 @@ function loadFileInto(fromIdentifier, fromTable) {
 
 //tacking progress variables to send user to next step
 
-optionClick1 = document.querySelector("#choice1");
+optionClick1 = document.querySelector("button#choice1");
 optionClick1.onclick = function() {
   if (trackProgress == 1) {
-    fromIdentifier == 1;
-    fromTable == question_table;
+    loadFileInto(2, "question_table")
+  } if (trackProgress == 2) {
+    loadFileInto(2, "outcome_table")
   }
 }
 
-optionClick2 = document.querySelector("#choice2");
+optionClick2 = document.querySelector("button#choice2");
 optionClick2.onclick = function() {
-  optionClick2.classList.toggle("equipmentClicked");
+  if (trackProgress == 1) {
+    loadFileInto(2, "question_table")
+  }
 }
 
-optionClick3 = document.querySelector("#choice3");
+optionClick3 = document.querySelector("button#choice3");
 optionClick3.onclick = function() {
-  optionClick3.classList.toggle("directionsClicked");
+  if (trackProgress == 1) {
+    loadFileInto(1, "outcome_table")
+  }
 }
 
 
