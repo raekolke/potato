@@ -56,7 +56,7 @@ function loadFileInto(fromIdentifier, fromTable) {
         } else if (fromTable == "outcome_table") {
           document.getElementById("situation").innerHTML = responseObj.outcome; //using the DOM, set the outcome
           
-          document.getElementById("choice1").innerHTML = responseObj.try_again; // setting the try again
+          document.getElementById("tryAgain").innerHTML = responseObj.try_again; // setting the try again
           
           document.getElementById("photo").src = responseObj.file_name; // set image source
           
