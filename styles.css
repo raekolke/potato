@@ -67,6 +67,17 @@ img {
     "photo  .  choice3";
 }
 
+.dead {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1vw;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1vh;
+  grid-template-areas:
+    "photo     .     situation"
+    "photo     .     tryAgain";
+}
+
 
 
 #background {
