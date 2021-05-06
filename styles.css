@@ -11,10 +11,14 @@
 
 }
 
+/* affects everything */
+
 * {
   box-sizing: border-box;
 }
 
+
+/* only affects the header on the page */
 #header h1 {
   font-size: 300%;
   background-color: #999999;
@@ -32,6 +36,8 @@ img {
   padding-left: 100px;
 }
 
+/*moves the p tags and buttons over to the side */
+
 #situation,
 #question,
 #choice1,
@@ -39,6 +45,9 @@ img {
 #choice3 {
   padding-right: 100px;
 }
+
+
+/* question table buttons */
 
 #choice1,
 #choice2,
@@ -53,6 +62,8 @@ img {
   background-color: #FBAF00;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+/* grid layout to display content */
 
 .float-container {
   display: grid;
@@ -76,6 +87,8 @@ img {
   background-color: white;
 }
 
+/* css for the question and situation */
+
 p {
   font-size: 150%;
   padding-top: 0px;
@@ -83,6 +96,8 @@ p {
   margin-top: 5px;
   margin-bottom: 0px;
 }
+
+/* begin grid area assignment */
 
 #photo {
   grid-area: photo;
@@ -107,6 +122,10 @@ p {
 #choice3 {
   grid-area: choice3;
 }
+
+/* end grid area assignment, note: tryAgain grid area assignment is below */
+
+/* outcome table button */
 
 #tryAgain {
   margin-right: 100px;
