@@ -62,23 +62,26 @@ function loadFileInto(fromIdentifier, fromTable) {
 optionClick1 = document.querySelector("button#choice1");
 optionClick1.onclick = function() {
   if (trackProgress == 1) {
-    loadFileInto(2, "question_table")
+    loadFileInto(2, "question_table");
+    trackProgress++;
   } if (trackProgress == 2) {
-    loadFileInto(2, "outcome_table")
+    loadFileInto(2, "outcome_table");
   }
 }
 
 optionClick2 = document.querySelector("button#choice2");
 optionClick2.onclick = function() {
   if (trackProgress == 1) {
-    loadFileInto(2, "question_table")
+    loadFileInto(2, "question_table");
+    trackProgress++;
   }
 }
 
 optionClick3 = document.querySelector("button#choice3");
 optionClick3.onclick = function() {
   if (trackProgress == 1) {
-    loadFileInto(1, "outcome_table")
+    loadFileInto(1, "outcome_table");
+    trackProgress++;
   }
 }
 
