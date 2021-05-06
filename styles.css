@@ -62,10 +62,10 @@ img {
   grid-template-areas:
     "photo  .  situation"
     "photo  .  question"
+    "photo  .  tryAgain"
     "photo  .  choice1"
     "photo  .  choice2"
-    "photo  .  choice3"
-    "photo  .  tryAgain";
+    "photo  .  choice3";
 }
 
 
