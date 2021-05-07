@@ -1,6 +1,6 @@
 <?
 
-// This page lists all the current records in the database
+// This page is the landing page for the database interface
 
 // require the database initialization and functions
 require 'database-config.php';
@@ -24,9 +24,10 @@ $sql = "SELECT * FROM $databaseTable
 $result = $db->query($sql);
 if (!$result) die("Select Error: " . $sql . "<br>" . $db->error);
 
-// onward to the HTML!
+?>
 
-?><!DOCTYPE html>
+<!-- begin HTML -->
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">

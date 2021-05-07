@@ -24,9 +24,10 @@ $sql = "SELECT * FROM $outcomeTable
 $result = $db->query($sql);
 if (!$result) die("Select Error: " . $sql . "<br>" . $db->error);
 
-// onward to the HTML!
+?>
 
-?><!DOCTYPE html>
+<!-- begin HTML -->
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
