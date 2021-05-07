@@ -18,54 +18,43 @@
 	</style>
 
 	<!-- external and internal JavaScript -->
-<<<<<<< HEAD
-	<script type="text/javascript" src="scripts.js" defer>
-    
-      function setCookie(cname,cvalue,progress,exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        progress = trackProgress;
-        var expires = "expires=" + d.toGMTString();
-        document.cookie = cname + "=" + cvalue + progress + ";" + expires + ";path=/";
-      }
-=======
-  <script src="scripts.js" defer>
-      
+  <script type="text/javascript" src="scripts.js" defer></script>
+
+  <script>
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
->>>>>>> 3f56e575f0fcf25a11d3276d1ade4ca0e547a95a
 
-      function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
-      function checkCookie() {
-        var user=getCookie("username");
-        if (user != "") {
-          alert("Welcome again " + user);
-        } else {
-           user = prompt("Please enter your name:","");
-           if (user != "" && user != null) {
-             setCookie("username", user, 30);
-           }
-        }
-      }
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
 	</script>
   
 </head>
