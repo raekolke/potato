@@ -18,6 +18,7 @@
 	</style>
 
 	<!-- external and internal JavaScript -->
+<<<<<<< HEAD
 	<script type="text/javascript" src="scripts.js" defer>
     
       function setCookie(cname,cvalue,progress,exdays) {
@@ -27,6 +28,16 @@
         var expires = "expires=" + d.toGMTString();
         document.cookie = cname + "=" + cvalue + progress + ";" + expires + ";path=/";
       }
+=======
+  <script src="scripts.js" defer>
+      
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+>>>>>>> 3f56e575f0fcf25a11d3276d1ade4ca0e547a95a
 
       function getCookie(cname) {
         var name = cname + "=";
