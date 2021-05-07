@@ -61,8 +61,7 @@ function checkCookie() {
 
 
 </head>
-<body onload="checkCookie()"></body>
-<body>
+<body onload="checkCookie()">
   
 <!-- this is the set up for the question_table, but we want the the results of our second table outcome_table to be set up differently because there are not as many variables -->
 	<!-- HTML elements here -->
