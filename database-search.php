@@ -12,7 +12,7 @@ $search = $_POST["searchText"];
 if ($search != "") {
 
 	// select all columns (*) in rows where the $search appears in 
-	// patient_name OR patient_complaint OR physician_name
+	// situation OR question OR file_name
 	$sql = "SELECT * FROM $databaseTable
 					WHERE situation LIKE '%$search%'
 					OR question LIKE '%$search%' 
@@ -25,9 +25,10 @@ if ($search != "") {
 	
 }
 
-// onward to the HTML!
+?>
 
-?><!DOCTYPE html>
+<!-- begin HTML -->
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">

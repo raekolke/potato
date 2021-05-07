@@ -15,8 +15,7 @@ $outFileName = mysqli_real_escape_string($db, $_POST["visitOutFileName"]);
 if ( ($outOutcome != "") && ($outTryAgain != "") && ($outFileName != "") ) {
 
 	// insert submitted information into the database
-	// ideally we would analyze the info first to confirm it is accurate, but let's live dangerously
-	// but we did use mysqli_real_escape_string() above for security reasons
+	// used mysqli_real_escape_string() above for security reasons
 	$sql = "INSERT INTO $outcomeTable (outcome, try_again, file_name)
 					VALUES ( '$outOutcome', '$outTryAgain', '$outFileName')";
 	
@@ -26,9 +25,10 @@ if ( ($outOutcome != "") && ($outTryAgain != "") && ($outFileName != "") ) {
 	
 }
 
-// onward to the HTML!
+?>
 
-?><!DOCTYPE html>
+<!-- begin HTML -->
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">

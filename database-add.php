@@ -17,8 +17,7 @@ $sitFileName = mysqli_real_escape_string($db, $_POST["visitFileName"]);
 if ( ($sitSituation != "") && ($sitQuestion != "") && ($sit1option != "") && ($sit2option != "") && ($sit3option != "") && ($sitFileName != "") ) {
 
 	// insert submitted information into the database
-	// ideally we would analyze the info first to confirm it is accurate, but let's live dangerously
-	// but we did use mysqli_real_escape_string() above for security reasons
+	// used mysqli_real_escape_string() above for security reasons
 	$sql = "INSERT INTO $databaseTable (situation, question, 1option, 2option, 3option, file_name)
 					VALUES ( '$sitSituation', '$sitQuestion', '$sit1option', '$sit2option', '$sit3option', '$sitFileName')";
 	
@@ -28,9 +27,10 @@ if ( ($sitSituation != "") && ($sitQuestion != "") && ($sit1option != "") && ($s
 	
 }
 
-// onward to the HTML!
+?>
 
-?><!DOCTYPE html>
+<!-- begin HTML -->
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">

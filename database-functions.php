@@ -1,6 +1,6 @@
 <?
 
-// This file contains one function to generate a table of information of data
+// This file contains two function, one for each table in the database, to generate a table of information of data
 
 // output a table of results, including a checkbox if $includeCheckbox is true
 // receive the situations as a database object into $allSit
