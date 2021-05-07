@@ -21,6 +21,7 @@
   <script type="text/javascript" src="scripts.js" defer></script>
 
   <script>
+ // cookie code from w3schools https://www.w3schools.com/js/js_cookies.asp 
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
