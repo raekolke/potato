@@ -18,8 +18,8 @@
 	</style>
 
 	<!-- external and internal JavaScript -->
-	<script type="text/javascript" src="scripts.js" defer>
-    
+  <script src="scripts.js" defer>
+      
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
